@@ -1,0 +1,13 @@
+.pie {
+  background: var(--oscuro); /* negro */
+    color: white;
+    padding: 20px 24px;
+    text-align: center;
+    font-size: 0.9rem;
+  border-top: 2px solid var(--principal); /* rojo */
+}
+
+.pie p {
+    margin: 4px 0;
+    color: var(--secundario); /* gris */
+}

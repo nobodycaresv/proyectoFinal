@@ -1,0 +1,35 @@
+.barra {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 24px;
+    background: var(--oscuro); /* negro */
+    color: white;
+    border-bottom: 2px solid var(--principal); /* rojo */
+}
+
+.logo {
+    height: 36px;
+    width: auto;
+}
+
+.titulo {
+    font-size: 1.2rem;
+    margin: 0;
+    color: white;
+}
+
+.menu {
+    margin-left: auto;
+    display: flex;
+    gap: 16px;
+}
+
+.menu a {
+    color: var(--secundario); /* gris */
+    text-decoration: none;
+}
+
+.menu a:hover {
+  color: var(--principal); /* rojo */
+}

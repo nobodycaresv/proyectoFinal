@@ -1,0 +1,22 @@
+:root {
+  --principal: #c81e2c; 
+  --secundario: #6c6f73; 
+  --fondo: #f2f2f2; 
+  --texto: #1a1a1a; 
+  --oscuro: #0d0d0d; 
+  --radio: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
