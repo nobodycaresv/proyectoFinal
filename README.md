@@ -1,16 +1,27 @@
-# React + Vite
+# Rosario Estética Vehicular
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistema web para la gestión de turnos de un lavadero vehicular. Permite a los clientes conocer los servicios disponibles y reservar turnos online, sin necesidad de llamar o acercarse presencialmente al local.
 
-Currently, two official plugins are available:
+Trabajo Práctico N.º 1 — Práctica Profesional 2 (Desarrollo Web Presencial), Tecnicatura en Análisis de Sistemas, Instituto Superior Del Milagro N.º 8207.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Integrantes
 
-## React Compiler
+- Vázquez Santiago
+- Tamer Francisco
+- Medina Matías
+- Pérez Ortega
+- Carrasco Mario
+- Tapia Tomás
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Cómo levantar el proyecto
 
-## Expanding the ESLint configuration
+```bash
+git clone https://github.com/nobodycaresv/proyectoFinal.git
+cd proyectoFinal
+npm install
+npm run dev
+```
+Captura de la pagina en:
+(./src/assets/paginaFuncionado.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
