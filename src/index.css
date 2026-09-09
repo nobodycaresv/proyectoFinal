@@ -12,10 +12,10 @@
 }
 
 body {
+  font-family: "Darker Grotesque", sans-serif;
   margin: 0;
   background: var(--fondo);
   color: var(--texto);
-  font-family: system-ui, sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
