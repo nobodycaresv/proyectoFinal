@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0d0d0d;
+  background-color: var(--oscuro);
 }
 
 .card {
@@ -12,7 +12,7 @@
   max-width: 500px;
   padding: 48px 36px;
   background-color: #1a1a1a;
-  border: 1px solid #3d0d16;
+  border: 1px solid var(--border);
   border-radius: 10px;
 }
 
@@ -20,13 +20,13 @@
   font-size: 2.1rem;
   font-weight: 600;
   margin-bottom: 16px;
-  color: #ffffff;
+  color: var(--fondo);
 }
 
 .descripcion {
   font-size: 1rem;
   line-height: 1.6;
-  color: #d4d4d4;
+  color: var(--fondo);
   margin-bottom: 32px;
 }
 
@@ -51,13 +51,13 @@
 }
 
 .btnPrimario {
-  background-color: #6d0f24;
+  background-color: var(--principal);
   color: #ffffff;
-  border: 1px solid #6d0f24;
+  border: 1px solid var(--principal);
 }
 
 .btnSecundario {
   background-color: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: var(--fondo);
+  border: 1px solid var(--fondo);
 }
