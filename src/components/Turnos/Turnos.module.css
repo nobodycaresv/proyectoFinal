@@ -5,8 +5,8 @@
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
-  background-color: #0b0b0b;
-  color: #ffffff;
+  background-color: var(--oscuro);
+  color: var(--fondo);
   min-height: 80vh;
   width: 100%;
   box-sizing: border-box;
@@ -15,7 +15,7 @@
 .titulo {
   font-size: 2rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--fondo);
   margin-bottom: 25px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -31,9 +31,9 @@
 }
 
 .botonSimulacion {
-  background-color: #1a1a1a;
-  color: #ffffff;
-  border: 1px solid #e50914;
+  background-color: var(--oscuro);
+  color: var(--fondo);
+  border: 1px solid var(--principal);
   padding: 8px 16px;
   border-radius: 6px;
   font-weight: 600;
@@ -42,19 +42,19 @@
 }
 
 .botonSimulacion:hover {
-  background-color: #e50914;
-  color: #ffffff;
+  background-color: var(--principal);
+  color: var(--fondo);
 }
 
 .etiqueta {
-  color: #cccccc;
+  color: var(--fondo);
   font-size: 0.95rem;
   font-weight: 500;
 }
 
 .desplegable {
-  background-color: #161616;
-  color: #ffffff;
+  background-color: var(--oscuro);
+  color: var(--fondo);
   border: 1px solid #333333;
   padding: 8px 12px;
   border-radius: 6px;
@@ -65,7 +65,7 @@
 }
 
 .desplegable:focus {
-  border-color: #e50914;
+  border-color: var(--principal);
 }
 
 .grilla {
@@ -77,24 +77,24 @@
 }
 
 .tarjeta {
-  background-color: #141414;
+  background-color: var(--oscuro);
   border: 1px solid #2a2a2a;
-  border-left: 4px solid #e50914;
+  border-left: 4px solid var(--principal);
   border-radius: 8px;
   padding: 20px;
   text-align: left;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px var(--oscuro);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .tarjeta:hover {
   transform: translateY(-2px);
   border-color: #3d3d3d;
-  border-left-color: #ff1e27;
+  border-left-color: var(--principal);
 }
 
 .nombreCliente {
-  color: #ffffff;
+  color: var(--fondo);
   font-size: 1.25rem;
   margin-top: 0;
   margin-bottom: 12px;
@@ -107,7 +107,7 @@
 }
 
 .campo strong {
-  color: #e50914;
+  color: var(--principal);
 }
 
 .mensajeEstado {
@@ -117,7 +117,7 @@
 }
 
 .mensajeError {
-  color: #ff4d4d;
+  color: var(--principal);
   font-size: 1rem;
   margin-top: 20px;
 }
