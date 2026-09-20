@@ -13,9 +13,9 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <main className="container my-4 flex-grow-1">
-        <h2 className="mb-4">Servicios</h2>
-        <div className="d-flex flex-wrap gap-3">
+      <main className="max-w-6xl mx-auto my-8 px-4">
+        <h2 className="text-2xl font-bold mb-4">Servicios</h2>
+        <div className="flex flex-wrap gap-4">
           {servicios.map((servicio) => (
             <ProductCard
               key={servicio.id}
