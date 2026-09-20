@@ -1,23 +1,32 @@
-import { useState } from 'react'
 import './App.css'
-import Navbar from './components/Navbar/navbar'
-import Main from './components/Main/Main'
+import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
-import Turnos from './components/Turnos/turnos'
+import ProductCard from './components/ProductCard/ProductCard'
+
+const servicios = [
+  { id: 1, nombre: 'Lavado Premium', precio: 8000, imagen: 'https://via.placeholder.com/300x200?text=Lavado+Premium', stock: 6 },
+  { id: 2, nombre: 'Limpieza de Interior', precio: 6500, imagen: 'https://via.placeholder.com/300x200?text=Limpieza+Interior', stock: 3 },
+  { id: 3, nombre: 'Pulido  ', precio: 4500, imagen: 'https://via.placeholder.com/300x200?text=Pulido+Opticas', stock: 0 },
+]
 
 export default function App() {
-  const [vista, setVista] = useState('inicio');
-
   return (
     <>
-      <Navbar setVista={setVista} />
-
-      {/* Renderiza según la opción seleccionada */}
-      {vista === 'inicio' && <Main />}
-      {vista === 'servicios' && <div style={{ padding: '50px', textAlign: 'center' }}><h2>Sección Servicios (Próximamente)</h2></div>}
-      {vista === 'turnos' && <Turnos />}
-      {vista === 'login' && <div style={{ padding: '50px', textAlign: 'center' }}><h2>Iniciar Sesión (Próximamente)</h2></div>}
-
+      <Navbar />
+      <main className="container my-4 flex-grow-1">
+        <h2 className="mb-4">Servicios</h2>
+        <div className="d-flex flex-wrap gap-3">
+          {servicios.map((servicio) => (
+            <ProductCard
+              key={servicio.id}
+              nombre={servicio.nombre}
+              precio={servicio.precio}
+              imagen={servicio.imagen}
+              stock={servicio.stock}
+            />
+          ))}
+        </div>
+      </main>
       <Footer />
     </>
   )
