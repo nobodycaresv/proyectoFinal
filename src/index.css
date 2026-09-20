@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import "bulma/css/bulma.min.css";
 
 :root {
   --principal: #c81e2c; 

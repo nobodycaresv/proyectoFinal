@@ -13,17 +13,18 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <main className="max-w-6xl mx-auto my-8 px-4">
-        <h2 className="text-2xl font-bold mb-4">Servicios</h2>
-        <div className="flex flex-wrap gap-4">
+      <main className="container my-6">
+        <h2 className="title is-3 mb-4">Servicios</h2>
+        <div className="columns is-multiline">
           {servicios.map((servicio) => (
-            <ProductCard
-              key={servicio.id}
-              nombre={servicio.nombre}
-              precio={servicio.precio}
-              imagen={servicio.imagen}
-              stock={servicio.stock}
-            />
+            <div className="column is-narrow" key={servicio.id}>
+              <ProductCard
+                nombre={servicio.nombre}
+                precio={servicio.precio}
+                imagen={servicio.imagen}
+                stock={servicio.stock}
+              />
+            </div>
           ))}
         </div>
       </main>
